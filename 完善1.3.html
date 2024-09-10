@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>东俣包装材料制品有限公司</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        transition: background-color 0.5s; /* 背景颜色过渡 */
+      }
+
+      header {
+        display: flex;
+        flex-wrap: wrap; /* 允许换行以适应小屏幕 */
+        align-items: center;
+        justify-content: space-between;
+        background: #35424a;
+        color: white;
+        padding: 20px;
+        position: relative;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+        color: #ffcc00; /* 鼠标悬浮时的颜色 */
+      }
+
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .hamburger div {
+        height: 3px;
+        width: 30px;
+        background: white;
+        margin: 4px 0;
+        transition: 0.3s; /* 动画过渡 */
+      }
+
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      section {
+        margin-bottom: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #35424a;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background: #35424a;
+        color: white;
+        bottom: 0;
+        width: 100%;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav ul {
+          display: none; /* 隐藏导航菜单 */
+          flex-direction: column; /* 垂直排列 */
+        }
+
+        nav ul.show {
+          display: flex; /* 显示菜单 */
+        }
+
+        .hamburger {
+          display: flex;
+        }
+      }
+
+      .carousel {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .carousel img {
+        width: 100%;
+        animation: fade 15s infinite;
+      }
+
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        20% {
+          opacity: 1;
+        }
+        30% {
+          opacity: 0;
+        }
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        padding: 10px;
+        background-color: #35424a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #ffcc00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2006715506,4229652623&fm=179&app=42&f=JPEG?w=400&h=400&s=44A438721ED367E150A192EE03007021"
+        alt="东俣包装材料 Logo"
+        class="logo"
+      />
+      <h1>东俣包装材料制品有限公司</h1>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">产品</a></li>
+          <li><a href="#">服务</a></li>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="carousel">
+        <img
+          src="https://via.placeholder.com/800x400.png?text=欢迎来到我们的公司"
+        />
+        <img
+          src="https://via.placeholder.com/800x400.png?text=优质的包装材料"
+        />
+        <img src="https://via.placeholder.com/800x400.png?text=我们的服务" />
+      </section>
+
+      <section>
+        <h2>欢迎来到东俣包装材料制品有限公司</h2>
+        <p>
+          我们专注于为客户提供优质的包装材料和服务，致力于提升产品外观和价值。
+        </p>
+      </section>
+
+      <section>
+        <h2>公司介绍</h2>
+        <ul>
+          <li>
+            惠州市东俣包装材料制品有限公司注册于惠州市惠阳区，法人代表为庄东云。
+          </li>
+          <li>
+            我们的经营范围包括水贴纸生产、产品外观涂装彩绘、喷油、丝印等。
+          </li>
+          <li>
+            我们的产品广泛适用于工艺礼品、运动用品和日常生活用品的外观美化。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>联系客服</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="姓名" required />
+          <input type="email" placeholder="邮箱" required />
+          <textarea placeholder="留言内容" rows="5" required></textarea>
+          <button type="submit">提交</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>客户案例</h2>
+        <p>展示一些成功案例或客户评价，以便潜在客户了解我们的实力和信誉。</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        版权所有 &copy; 2024
+        东俣包装材料制品有限公司。联系电话：18928340746。邮箱：huyuxiang0746@gmail.com。
+      </p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("nav ul");
+        nav.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
